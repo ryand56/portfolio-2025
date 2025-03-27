@@ -15,11 +15,11 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="flex flex-col md:flex-row gap-[60px] mb-[30px]">
-          <div className="md:w-[50%]">
+        <section className="flex flex-col md:flex-row gap-[15px] md:gap-[60px] mb-[30px]">
+          <div className="md:card">
             <h2 className="text-lg">About Me</h2>
-            <p className="font-light">Hello, my name is Ryan. I'm currently studying computer engineering at <a
-              href="https://www.nait.ca" className="hover:text-blue-600 underline">NAIT</a>. I've worked on a few projects that helped me get to where I am today.
+            <p>Hello, my name is Ryan. I'm currently studying computer engineering at <a
+              href="https://www.nait.ca" className="underline">NAIT</a>. I've worked on a few projects that helped me get to where I am today.
             </p>
           </div>
           <div>
@@ -28,8 +28,19 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section>
+        <section className="mb-[30px]">
           <h2>What I'm currently working on</h2>
+          <ul className="font-light list-disc pl-[25px]">
+            <li>WineUSBDM (Debugging and flashing 9S12 microcontrollers on Linux, preferably Nix)</li>
+            <li>Wrangler (Cloudflare Workers SDK) flake</li>
+            <li>R2 Upload Action (S3 compatible API action for GitHub Actions)</li>
+            <li>Contributing to Nixpkgs, the package repository for Nix</li>
+            <li>Selfhosting many different services.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Want to contact me?</h2>
+          <p>You can email me at <a href="mailto:contact@ryand.ca" className="underline">contact@ryand.ca</a>. I also have a <a href="https://github.com/ryand56" className="underline">GitHub</a> and <a href="https://linkedin.com/in/ryand56" className="underline">LinkedIn</a>.</p>
         </section>
       </main>
     </div>

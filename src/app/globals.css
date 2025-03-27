@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    font-weight: 300;
+  }
+
+  a:hover {
+    color: rgb(37, 99, 235);
+  }
+}
+
+@layer components {
+  .card {
+    width: 50%;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
