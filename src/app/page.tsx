@@ -1,4 +1,5 @@
-import Image from "next/image";
+//import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <h1 className="text-4xl">&gt; ryand_</h1>
         <nav>
           <ul className="flex flex-row flex-wrap justify-between m-[.5em] gap-[.5em]">
-            <li><a href="/" className="hover:text-blue-600">Home</a></li>
+            <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
             <li><a href="https://blog.ryand.ca" className="hover:text-blue-600">Blog</a></li>
             <li><a href="https://q.ryand.ca" className="hover:text-blue-600">Quartz</a></li>
           </ul>
@@ -18,18 +19,18 @@ export default function Home() {
         <section className="flex flex-col md:flex-row gap-[15px] md:gap-[60px] mb-[30px]">
           <div className="md:card">
             <h2 className="text-lg">About Me</h2>
-            <p>Hello, my name is Ryan. I'm currently studying computer engineering at <a
-              href="https://www.nait.ca" className="underline">NAIT</a>. I've worked on a few projects that helped me get to where I am today.
+            <p>Hello, my name is Ryan. I&apos;m currently studying computer engineering at <a
+              href="https://www.nait.ca" className="underline">NAIT</a>. I&apos;ve worked on a few projects that helped me get to where I am today.
             </p>
           </div>
           <div>
             <a href="https://skillicons.dev">
-              <img src="https://skillicons.dev/icons?i=nix,arch,linux,cs,cpp,net,ts,react,nextjs,gatsby,js,nodejs,electron,express,mongo,mysql,html,css,markdown,lua,java,androidstudio,vscode,visualstudio,git,github,githubactions,gitlab,docker,nginx,aws,gcp,azure,cloudflare,vercel,netlify,aftereffects,photoshop,stackoverflow,discord,twitter,linkedin,mastodon&perline=9" alt="Skill Icons" />
+              <img src="https://skillicons.dev/icons?i=nix,haskell,rust,arch,linux,python,cs,cpp,net,ts,react,nextjs,gatsby,js,nodejs,electron,express,mongo,mysql,html,css,markdown,lua,java,androidstudio,vscode,visualstudio,git,github,githubactions,gitlab,docker,nginx,aws,gcp,azure,cloudflare,vercel,netlify,aftereffects,photoshop,stackoverflow,discord,twitter,linkedin,mastodon&perline=9" alt="Skill Icons" />
             </a>
           </div>
         </section>
         <section className="mb-[30px]">
-          <h2>What I'm currently working on</h2>
+          <h2>What I&apos;m currently working on</h2>
           <ul className="font-light list-disc pl-[25px]">
             <li>WineUSBDM (Debugging and flashing 9S12 microcontrollers on Linux, preferably Nix)</li>
             <li>Wrangler (Cloudflare Workers SDK) flake</li>
